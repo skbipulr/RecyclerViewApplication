@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="6dp"
+    android:padding="2dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImageIV"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/shirt1"/>
+
+        <TextView
+            android:id="@+id/productPriceTV"
+            android:layout_width="wrap_content"
+            android:text="Tk.2000"
+            android:textSize="12dp"
+            android:padding="2dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/price_bg"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/productNameTV"
+            android:layout_below="@+id/productImageIV"
+            android:layout_width="wrap_content"
+            android:text="Jama"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
